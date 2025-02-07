@@ -25,7 +25,7 @@ const MainTitle = () => {
         className="absolute top-0 left-0 w-full h-full object-cover z-[-1]"
       >
         <source
-          src="/videos/204565-924698132_small.mp4" // Chemin vers votre vidéo locale
+          src="/videos/horloge.mp4" // Chemin vers votre vidéo locale
           type="video/mp4"
         />
         Your browser does not support the video tag.

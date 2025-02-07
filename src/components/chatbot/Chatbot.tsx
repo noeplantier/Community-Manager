@@ -15,7 +15,7 @@ export function Chatbot() {
   const [isTyping, setIsTyping] = useState(false);
   const [messages, setMessages] = useState<Message[]>([
     {
-      content: "Bonjour ! Je suis l'assistant WestApp. Je peux vous aider à découvrir notre plateforme de rencontres réelles, nos événements et répondre à vos questions ! Comment puis-je vous aider ?",
+      content: "Bonjour ! Je suis l'assistant CommunityApp. Je peux vous aider à découvrir notre plateforme de rencontres réelles, nos événements et répondre à vos questions ! Comment puis-je vous aider ?",
       isBot: true,
       timestamp: new Date(),
       suggestions: [
@@ -73,7 +73,7 @@ export function Chatbot() {
       setMessages(prev => [...prev, botMessage]);
     } catch (error) {
       const errorMessage: Message = {
-        content: "Désolé, je rencontre des difficultés techniques. Vous pouvez réessayer ou contacter notre support à support@westapp.com",
+        content: "Désolé, je rencontre des difficultés techniques. Vous pouvez réessayer ou contacter notre support à support@CommunityApp.com",
         isBot: true,
         timestamp: new Date()
       };
@@ -87,7 +87,7 @@ export function Chatbot() {
     return (
       <button
         onClick={() => setIsOpen(true)}
-        className="fixed bottom-4 right-4 bg-blue-600 text-white p-4 rounded-full shadow-lg hover:bg-blue-700 transition-all duration-300 transform hover:scale-105 flex items-center gap-2"
+        className="fixed bottom-4 right-4 bg-pink-200 text-white p-4 rounded-full shadow-lg hover:bg-pink-700 transition-all duration-300 transform hover:scale-105 flex items-center gap-2"
       >
         <MessageSquare className="h-6 w-6" />
       </button>
@@ -100,7 +100,7 @@ export function Chatbot() {
         onClick={() => setIsMinimized(false)}
         className="fixed bottom-4 right-4 bg-white p-4 rounded-lg shadow-lg cursor-pointer hover:shadow-xl transition-all duration-300"
       >
-        <MessageSquare className="h-6 w-6 text-blue-600" />
+        <MessageSquare className="h-6 w-6 text-pink-600" />
       </div>
     );
   }
@@ -108,10 +108,10 @@ export function Chatbot() {
   return (
     <div className="fixed bottom-4 right-4 w-96 bg-white rounded-lg shadow-xl border border-gray-200 transition-all duration-300">
       {/* Header */}
-      <div className="flex items-center justify-between p-4 bg-blue-600 text-white rounded-t-lg">
+      <div className="flex items-center justify-between p-4 bg-pink-600 text-white rounded-t-lg">
         <div className="flex items-center gap-2">
           <MessageSquare className="h-5 w-5" />
-          <h3 className="font-semibold">Assistant WestApp</h3>
+          <h3 className="font-semibold">Assistant CommunityApp</h3>
         </div>
         <div className="flex gap-2">
           <button
@@ -143,16 +143,16 @@ export function Chatbot() {
               >
                 <div className="flex-shrink-0 w-8 h-8 rounded-full bg-indigo-100 flex items-center justify-center">
                   {message.isBot ? (
-                    <Bot className="h-5 w-5 text-blue-600" />
+                    <Bot className="h-5 w-5 text-pink-600" />
                   ) : (
-                    <User className="h-5 w-5 text-blue-600" />
+                    <User className="h-5 w-5 text-pink-600" />
                   )}
                 </div>
                 <div
                   className={`p-3 rounded-lg ${
                     message.isBot
                       ? 'bg-white border border-gray-200'
-                      : 'bg-blue-600 text-white'
+                      : 'bg-pink-600 text-white'
                   }`}
                 >
                   <p className="text-sm whitespace-pre-wrap">{message.content}</p>
@@ -167,7 +167,7 @@ export function Chatbot() {
                   <button
                     key={idx}
                     onClick={() => handleSuggestionClick(suggestion)}
-                    className="text-sm bg-blue-100 text-blue-700 px-3 py-1 rounded-full hover:bg-blue-200 transition-colors"
+                    className="text-sm bg-pink-100 text-pink-700 px-3 py-1 rounded-full hover:bg-pink-200 transition-colors"
                   >
                     {suggestion}
                   </button>

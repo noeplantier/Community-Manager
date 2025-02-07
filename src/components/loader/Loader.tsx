@@ -5,7 +5,7 @@ const Loader = () => {
 
   useEffect(() => {
     if (videoRef.current) {
-      videoRef.current.playbackRate = 1.0; // Changez la valeur pour ajuster la vitesse
+      videoRef.current.playbackRate = 3.0; // Changez la valeur pour ajuster la vitesse
     }
   }, []);
 
