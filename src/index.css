@@ -12,6 +12,15 @@
   }
 }
 
+.hero-image{
+  margin-top: 5rem;
+  margin-left: 20rem;
+  display: center;
+   background-color: rgb(244, 240, 240);
+  justify-content: center;
+  align-items: center;
+}
+
 
 #home-container{
 padding-top: 15rem;
@@ -49,11 +58,7 @@ padding-top: 15rem;
   object-fit: cover;
 }
 
-#main-container {
-  position: relative;
-  z-index: 10;
-  background-color: linear-gradient(rgba(43, 38, 38, 0.5), rgba(136, 114, 114, 0.5));
-}
+
 
 .button-container {
   display: flex;
@@ -62,8 +67,14 @@ padding-top: 15rem;
 }
 
 .custom-button {
+  border: none;
   flex: 1; /* Les boutons prennent la même largeur */
   max-width: 150px; /* Limite la largeur maximale des boutons */
+  background-color: pink;
+}
+
+.custom-button:hover {
+  background-color: rgb(238, 176, 187);
 }
 
 .leaflet-container {
@@ -142,7 +153,6 @@ padding-top: 15rem;
 }
 
 .button {
-    background-color: #007bff;
     color: white;
     border: none;
     border-radius: 5px;
@@ -152,7 +162,7 @@ padding-top: 15rem;
 }
 
 .button:hover {
-    background-color: #0056b3;
+    background-color: rgb(238, 176, 187);
 }
 
 .profile-info {
@@ -201,8 +211,7 @@ padding-top: 15rem;
 
 /* Styles supplémentaires */
 .leaflet-container {
-  background-color: #007bff;
-
+  background-color: pink;
   height: 100%;
   width: 100%;
   z-index: 1;

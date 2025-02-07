@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Modal, Button, Form } from 'react-bootstrap';
 import '../../index.css';
+import { color } from 'framer-motion';
 
 const MainTitle = () => {
 
@@ -45,10 +46,10 @@ const MainTitle = () => {
 
    
           <div className="button-container">
-      <Button variant="secondary" className="custom-button" onClick={handleOpenSignupModal}>
+      <Button className="custom-button" onClick={handleOpenSignupModal} >
         S'inscrire
       </Button>
-      <Button variant="secondary" className="custom-button" onClick={handleOpenLoginModal}>
+      <Button className="custom-button" onClick={handleOpenLoginModal}>
         Se Connecter
       </Button>
     </div>
