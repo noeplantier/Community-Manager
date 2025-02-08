@@ -52,74 +52,7 @@ const MainTitle = () => {
         </div>
       </div>
 
-      {/* Modale Connexion */}
-      <Modal show={showLoginModal} onHide={handleCloseLoginModal}>
-        <Modal.Header closeButton>
-          <Modal.Title>Connexion</Modal.Title>
-        </Modal.Header>
-        <Modal.Body>
-          <Form>
-            <Form.Group controlId="formBasicEmail">
-              <Form.Label>Email address</Form.Label>
-              <Form.Control type="email" placeholder="Enter email" />
-            </Form.Group>
-
-            <Form.Group controlId="formBasicPassword">
-              <Form.Label>Password</Form.Label>
-              <Form.Control type="password" placeholder="Password" />
-            </Form.Group>
-
-            <Button variant="primary" type="submit">
-              Submit
-            </Button>
-          </Form>
-        </Modal.Body>
-        <Modal.Footer>
-          <Button variant="secondary" onClick={handleCloseLoginModal}>
-            Close
-          </Button>
-        </Modal.Footer>
-      </Modal>
-
-   {/* Modale d'inscription */}
-   <Modal show={showSignupModal} onHide={handleCloseSignupModal}>
-        <Modal.Header closeButton>
-          <Modal.Title>Inscription</Modal.Title>
-        </Modal.Header>
-        <Modal.Body>
-          <Form>
-            <Form.Group controlId="formBasicName">
-              <Form.Label>Nom</Form.Label>
-              <Form.Control type="text" placeholder="Entrez votre nom" />
-            </Form.Group>
-
-            <Form.Group controlId="formBasicEmail">
-              <Form.Label>Email</Form.Label>
-              <Form.Control type="email" placeholder="Entrez votre email" />
-            </Form.Group>
-
-            <Form.Group controlId="formBasicPassword">
-              <Form.Label>Mot de passe</Form.Label>
-              <Form.Control type="password" placeholder="Entrez votre mot de passe" />
-            </Form.Group>
-
-            <Form.Group controlId="formBasicConfirmPassword">
-              <Form.Label>Confirmez le mot de passe</Form.Label>
-              <Form.Control type="password" placeholder="Confirmez votre mot de passe" />
-            </Form.Group>
-
-            <Button variant="primary" type="submit">
-              S'inscrire
-            </Button>
-          </Form>
-        </Modal.Body>
-        <Modal.Footer>
-          <Button variant="secondary" onClick={handleCloseSignupModal}>
-            Close
-          </Button>
-        </Modal.Footer>
-      </Modal>
-      
+    
     </div>
   );
 };
