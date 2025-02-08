@@ -1,15 +1,13 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Modal, Button, Form } from 'react-bootstrap';
 import '../../index.css';
-import { color } from 'framer-motion';
 
 const MainTitle = () => {
 
   const [showLoginModal, setShowLoginModal] = useState(false);
   const [showSignupModal, setShowSignupModal] = useState(false);
 
-  const handleOpenLoginModal = () => setShowLoginModal(true);
   const handleCloseLoginModal = () => setShowLoginModal(false);
 
   const handleOpenSignupModal = () => setShowSignupModal(true);
@@ -46,11 +44,8 @@ const MainTitle = () => {
 
    
           <div className="button-container">
-      <Button className="custom-button" onClick={handleOpenSignupModal} >
-        S'inscrire
-      </Button>
-      <Button className="custom-button" onClick={handleOpenLoginModal}>
-        Se Connecter
+      <Button className="custom-button" onClick={handleOpenSignupModal} style={{marginTop: '20px'}}>
+        Get Started
       </Button>
     </div>
           </div>

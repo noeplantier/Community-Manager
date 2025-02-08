@@ -3,9 +3,12 @@ import { Header } from './components/Header';
 import { Hero } from './components/Hero';
 import { Chatbot } from './components/chatbot/Chatbot';
 import './index.css';
-import MainTitle from './components/title/MainTitle';
+import MainTitle from './components/home/Home';
 import { useEffect, useState } from 'react';
 import Loader from './components/loader/Loader';
+import About from './components/About';
+import Services from './components/Services';
+import Contact from './components/Contact';
 const App = () => {
 const [isLoading, setIsLoading] = useState(true);
 
@@ -31,7 +34,9 @@ return (
 
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         <Hero />
-    
+    <About/>
+    <Services/>
+    <Contact/>
       </main>
       <Chatbot />
     </div>
